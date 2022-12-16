@@ -7,7 +7,23 @@ import { Component } from "@angular/core";
 })
 
 export class NovaTranferenciaComponent {
-    public transferir() {
-        console.log(`solicitada nova tranferencia`);
-    }
+
+  valor: number = 0;
+  destino: number = 0;
+
+  // constructor(valor: number, destino: number){
+  //   this.valor = valor;
+  //   this.destino = destino;
+  // }
+
+  public transferir() {
+
+    console.log("Solicitada Nova Transferencia");
+    console.log("Valor: ", this.valor);
+    console.log("Destino: ", this.destino);
+
+
+
+
+  }
 }
