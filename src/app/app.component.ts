@@ -8,7 +8,6 @@ import { TransferenciaService } from './services/transferencia.service';
 })
 export class AppComponent {
   title = 'bytebank';
-  public transferencias: any[] = [];
 
   constructor(private service: TransferenciaService){
 
