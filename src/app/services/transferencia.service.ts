@@ -24,10 +24,10 @@ constructor(private httpClient: HttpClient) {
     return this.httpClient.get<Transferencia[]>(this.url);
   }
 
-  public adicionar(transferencia: any){
+  public adicionar(transferencia: Transferencia):Observable<Transferencia>{
     this.hidratar(transferencia);
 
-    this.listaTranferencia.push(transferencia);
+    return this.httpClient.post<Transferencia>(this.url, transferencia);
   }
 
   private hidratar(transferencia: any){
